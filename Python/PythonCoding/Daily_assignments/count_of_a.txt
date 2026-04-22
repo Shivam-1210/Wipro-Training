@@ -1,0 +1,11 @@
+
+# counting how many times a appears in the string using enumerate
+
+str1 = input('enter the string: ')
+cnt = 0
+
+for index, char in enumerate(str1):
+    if char == 'a':
+        cnt+=1
+
+print('Count of a is',cnt)
