@@ -1,0 +1,194 @@
+# Program to check the eligibility to vote          
+
+age = int(input('Enter the age: '))
+
+if age >= 18:
+    print('eligible to vote')
+else:
+    print('not eligible to vote')
+
+Output: Enter the age: 43
+        eligible to vote
+        Enter the age: 12
+        not eligible to vote
+______________________________________________________________________________________________________________
+
+
+# program to check leap year
+
+year = int(input('Enter a year: '))
+
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    print('Leap Year')
+else:
+    print('Not a leap year')
+
+Output: Enter a year: 1900
+        Not a leap year
+        Enter a year: 2008
+        Leap Year
+    
+_________________________________________________________________________________________________________________
+
+
+# divisibility by 5
+
+num = int(input('Enter a number: '))
+
+if num % 5 == 0:
+    print(num, 'is divisible by 5')
+else:
+    print(num, 'is not divisible by 5')
+
+Output: Enter a number: 78
+        78 is not divisible by 5
+        Enter a number: 45
+        45 is divisible by 5
+__________________________________________________________________________________________________________________
+
+# Program to check vowel or consonant
+
+char1 = input('Enter a character: ').lower()
+
+if len(char1) == 1 and char1.isalpha():
+    if char1 in 'aeiou':
+        print('The character is vowel')
+    else:
+        print('The character is consonant')
+
+else:
+    print('Invalid character')
+
+Output: Enter a character: u
+        The character is vowel
+        Enter a character: g
+        The character is consonant
+
+___________________________________________________________________________________________________________________
+
+# Program to check whether a password is strong or weak
+
+password = input("Enter your password: ")
+
+# Check if the password is at least 8 characters long
+if len(password) >= 8:
+    print("Your password is strong.")
+else:
+    print("Your password is weak. It should be at least 8 characters long.")
+
+Output: Enter your password: ecrvii
+             Your password is weak. It should be at least 8 characters long.
+
+___________________________________________________________________________________________________________________
+
+
+# Get grade input from the user
+
+grade = input("Enter your grade (A, B, C, D, F): ").upper()  
+
+match grade:
+    case "A":
+        print("Excellent!")
+    case "B":
+        print("Very Good!")
+    case "C":
+        print("Good")
+    case "D":
+        print("Needs Improvement")
+    case "F":
+        print("Fail")
+    case _:  
+        print("Invalid grade entered")
+
+Output: Enter your grade (A, B, C, D, F): A
+             Excellent!
+
+___________________________________________________________________________________________________________________
+
+
+# Get traffic light color input from the user
+
+color = input("Enter traffic light color: ").capitalize()  # Capitalize to standardize input
+
+match color:
+    case "Red":
+        print("Stop")
+    case "Yellow":
+        print("Wait")
+    case "Green":
+        print("Go")
+    case _:
+        print("Invalid color entered")
+
+Output: Enter traffic light color: green
+             Go
+
+____________________________________________________________________________________________________________________________
+
+#Program to print factorial of a number
+
+num = int(input("Enter a number: "))
+
+factorial = 1
+
+for i in range(1, num + 1):
+    factorial *= i
+print('The factorial of',num , 'is', factorial)
+
+Output: Enter a number: 5
+             The factorial of 5 is 120
+______________________________________________________________________________________________________________________________
+
+# Program to print all even numbers between 1 and 20
+
+for num in range(2, 20, 2):
+    print(num, end = '\t')
+
+Output:  2  4  6  8  10  12  14	16  18	
+
+____________________________________________________________________________________________________________________________
+
+# program that uses a while loop to create a countdown timer from 10 to 0
+
+count = 10
+while count >= 0:
+    print(count)
+    count-=1
+
+___________________________________________________________________________________________________________________________
+
+# Program that uses a for loop to count the number of vowels in a given string
+
+str1 = input('Enter a string: ').lower()
+cnt = 0
+for ch in str1:
+    if ch in 'aeiou':
+        cnt+=1
+print(cnt)
+
+Output: Enter a string: ggdaiemojug
+             5
+
+___________________________________________________________________________________________________________________
+
+# Program to print numbers from 1 to 10, but skips printing the number 5 (use continue)
+# and stops the loop if the number 8 is reached (use break).
+
+for i in range(1, 11):
+    if i == 5:
+        continue
+    elif i == 8:
+        break
+    print(i, end='\t')
+
+Output: 1	2	3	4	6	7
+
+
+
+
+
+
+
+
+
+
