@@ -1,0 +1,214 @@
+
+Do the following in sequence and record the results in a single program 
+Create a list with 5 different types of fruits. Print the list. 
+Add two more fruits to the list, then remove one fruit from it. Print the updated list. 
+Access the second and fourth fruits in the list. Print them. 
+Slice the list to get the first three fruits and print the result. 
+Find and print the length of your list.
+
+list1 = ['Apple', 'Banana', 'Mango', 'Grapes', 'Orange']
+print(list1)
+list1.extend(['Blackberry' ,'pomogranate'])
+list1.pop()
+print(list1)
+list2 = list1[1:4:2]
+print(list2)
+list3 = list1[:3]
+print(list3)
+print(f'length of list1: {len(list1)}')
+print(f'length of list2: {len(list2)}')
+print(f'length of list3: {len(list3)}')
+
+Output: ['Apple', 'Banana', 'Mango', 'Grapes', 'Orange']
+['Apple', 'Banana', 'Mango', 'Grapes', 'Orange', 'Blackberry']
+['Banana', 'Grapes']
+['Apple', 'Banana', 'Mango']
+length of list1: 6
+length of list2: 2
+length of list3: 3
+
+_______________________________________________________________________________________________________________
+
+
+Do the following in sequence and record the results in a single program 
+Create a tuple with the names of 3 different cities you’d like to visit. Print the tuple.: 
+Access and print the first and last elements of the tuple.: 
+Create another tuple with 2 more cities. Concatenate both tuples and print the result. 
+Try changing one element of the tuple. What happens? 
+Unpack the elements of the tuple into separate variables and print them.
+
+
+tup1 = ('Varanasi', 'Prayagraj', 'Lucknow')
+print(tup1)
+tup2 = tup1[::2]
+print(tup2)
+tup3 = ('Bangalore', 'Mumbai')
+tup1 = tup1+tup3
+print(tup1)
+#tup1[2] = ('Noida')  # tuple don't support item assignment
+city1 , city2, city3, city4, city5 = tup1
+print(city1)
+print(city2)
+print(city3)
+print(city4)
+print(city5)
+
+Output: ('Varanasi', 'Prayagraj', 'Lucknow')
+('Varanasi', 'Lucknow')
+('Varanasi', 'Prayagraj', 'Lucknow', 'Bangalore', 'Mumbai')
+Varanasi
+Prayagraj
+Lucknow
+Bangalore
+Mumbai
+
+______________________________________________________________________________________________________________
+
+
+Do the following in sequence and record the results in a single program 
+Create a set of 5 unique colors. Print the set. 
+Add a new color to the set, then try removing an existing color. Print the updated set. 
+Create another set with 3 different colors. Find the intersection, union, and difference 
+between both sets. 
+Check if a specific color is in the set and print the result. 
+Convert a list of fruits (with some duplicates) into a set and print the unique fruits. 
+
+set1 = {'White','Black', 'Green', 'Blue', 'Red'}
+print(set1)
+set1.add('Grey')
+set1.pop()
+print(set1)
+set2 = {'Yellow', 'pink', 'Violet'}
+print(f'union_set = {set1 | set2}')
+print(f'intersection_set = {set1 & set2}')
+print(f'difference_set = {set1 - set2}')
+if 'Red' in set1:
+    print('Red is present in the set1')
+
+Fruits = {'Apple', 'Banana', 'Mango', ' Orange', 'Apple', 'Mango'}
+print(Fruits)
+
+Output: {'Blue', 'White', 'Green', 'Red', 'Black'}
+{'White', 'Grey', 'Green', 'Red', 'Black'}
+union_set = {'Yellow', 'White', 'Grey', 'Violet', 'Green', 'pink', 'Red', 'Black'}
+intersection_set = set()
+difference_set = {'White', 'Grey', 'Green', 'Red', 'Black'}
+Red is present in the set1
+{' Orange', 'Banana', 'Mango', 'Apple'}
+
+________________________________________________________________________________________________________________
+
+
+Do the following in sequence and record the results in a single program 
+Create a dictionary with your name, age, and favorite hobby as keys, and provide 
+appropriate values. Print the dictionary. 
+Access and print the value associated with your name in the dictionary. 
+Add a new key-value pair for your favorite food, then update the value for your favorite 
+hobby. Print the updated dictionary. 
+Print all the keys and all the values in the dictionary separately. 
+Remove the age key-value pair from the dictionary. Print the dictionary to see the 
+change.
+
+dict1 = {'name': 'XYZ', 'age': '23', 'fav_hobby': 'Cricket'}
+print(dict1)
+print(dict1['name'])
+dict1['fav_food'] =  'Biryani'
+dict1['fav_hobby'] = 'Badminton'
+print(dict1)
+print(f'keys: {list(dict1.keys())}')
+print(f'values: {list(dict1.values())}')
+dict1.pop('age')
+print(dict1)
+
+Output: {'name': 'XYZ', 'age': '23', 'fav_hobby': 'Cricket'}
+XYZ
+{'name': 'XYZ', 'age': '23', 'fav_hobby': 'Badminton', 'fav_food': 'Biryani'}
+keys: ['name', 'age', 'fav_hobby', 'fav_food']
+values: ['XYZ', '23', 'Badminton', 'Biryani']
+{'name': 'XYZ', 'fav_hobby': 'Badminton', 'fav_food': 'Biryani'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
