@@ -40,7 +40,7 @@ def test_find_elements_amazon(driver):
     first_product = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, 'a h2 span')))
     print("\nFirst Product:", first_product.text)
 
-    product_titles = wait.until(EC.visibility_of_all_elements_located((By.CSS_SELECTOR, 'a h2 span')))
+    product_titles = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'a h2 span')))
     print(f"\nFound {len(product_titles)} product title on page one. \n")
 
     for i, title in enumerate(product_titles[:5], start=1):
