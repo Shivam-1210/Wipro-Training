@@ -30,7 +30,7 @@ class SignupPage:
         logger.info("Entering Password")
         element = WaitUtils.wait_for_element_visible(
             self.driver,
-            SignupLocators.USERNAME_password
+            SignupLocators.PASSWORD_INPUT
         )
         element.clear()
         element.send_keys(password)

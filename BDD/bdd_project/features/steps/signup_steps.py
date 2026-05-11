@@ -31,7 +31,7 @@ def step_impl(context, username):
 @when(u'User enters signup password "{password}"')
 def step_impl(context,password):
     logger.info(f"Step : Enter Password : {password}")
-    context.signup_page.enter_username(password)
+    context.signup_page.enter_password(password)
 
 
 

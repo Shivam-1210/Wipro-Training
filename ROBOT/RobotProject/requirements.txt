@@ -1,0 +1,16 @@
+utils
+robotframework
+robotframework-seleniumlibrary
+#robotframework-requests
+#robotframework-pabot
+#robotframework-databaselibrary
+#robotframework-jsonlibrary
+robotframework-browser
+allure-robotframework
+selenium
+#requests
+pyyaml
+#openpyxl
+#pandas
+#faker
+#python-dotenv
